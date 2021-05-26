@@ -7,7 +7,7 @@ It is a fun game. You can bet how many rounds it will take to find out the numbe
 
 In order to run this app, you need to install Expo CLI and have Android Studio ready with an Emulator. Follow the guides below:
 
-Initialize node modules:
+Initializing node modules:
 ### `npm install --save react-tinder-card --legacy-peer-deps`
 ### `npm install`
 Installing Expo CLI:
