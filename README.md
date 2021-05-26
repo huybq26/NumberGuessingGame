@@ -2,7 +2,7 @@
 
 A mobile game that lets you and your friends play with numbers.
 
-At the start of the game, you will choose a secret number for your phone to guess. This number must be bigger than 0 and smaller than 100. After that, your phone will start guessing. For each time your phone propose a number, you should tell it that this number is smaller and bigger than the secret one, and it will guess another, till it is correct. After it finds out, the screen will display the secret number and the rounds took to guess it. <br><br>
+At the start of the game, you will choose a secret number for your phone to guess. This number must be bigger than 0 and smaller than 100. After that, your phone will start guessing. For each time your phone propose a number, you should tell it if this number is smaller and bigger than the secret one, and it will guess another, till it is correct. After it finds out, the screen will display the secret number and the rounds took to guess it. <br><br>
 It is a fun game. You can bet how many rounds it will take to find out the number with your friends, or you can use this to replace the rock, paper, scissors game :)
 
 In order to run this app, you need to install Expo CLI and have Android Studio ready with an Emulator. Follow the guides below:
