@@ -11,8 +11,8 @@ import GameOverScreen from './screens/GameOverScreen';
 const fetchFonts = () => {
   return Font.loadAsync({
     'open-sans': require('./assets/fonts/OpenSans-Regular.ttf'),
-    'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf'),
-  }); //load fonts
+    'open-sans-bold': require('./assets/fonts/OpenSans-Bold.ttf')
+  });
 };
 
 export default function App() {
@@ -25,21 +25,21 @@ export default function App() {
       <AppLoading
         startAsync={fetchFonts}
         onFinish={() => setDataLoaded(true)}
-        onError={(err) => console.log(err)}
+        onError={err => console.log(err)}
       />
     );
   }
 
   const configureNewGameHandler = () => {
     setGuessRounds(0);
-    setUserNumber(null); // make sure return to the start game screen
+    setUserNumber(null);
   };
 
-  const startGameHandler = (selectedNumber) => {
+  const startGameHandler = selectedNumber => {
     setUserNumber(selectedNumber);
   };
 
-  const gameOverHandler = (numOfRounds) => {
+  const gameOverHandler = numOfRounds => {
     setGuessRounds(numOfRounds);
   };
 
@@ -60,15 +60,16 @@ export default function App() {
   }
 
   return (
-    <View style={styles.screen}>
-      <Header title='Guess a Number' />
+    <SafeAreaView style={styles.screen}>
+      <Header title="Guess a Number" />
       {content}
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   screen: {
-    flex: 1, // make sure the view takes all the space it can get
-  },
+    flex: 1
+  }
 });
+
